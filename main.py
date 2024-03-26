@@ -13,7 +13,7 @@ load_dotenv()
 
 # Configuration Variables
 DEFAULT_QR_DIRECTORY = 'qr_codes'
-DEFAULT_FILL_COLOR = 'red'
+DEFAULT_FILL_COLOR = 'yellow'
 DEFAULT_BACK_COLOR = 'black'
 
 def setup_logging():
