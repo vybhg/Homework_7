@@ -13,7 +13,7 @@ load_dotenv()
 
 # Environment Variables for Configuration
 QR_DIRECTORY = os.getenv('QR_CODE_DIR', 'qr_codes')  # Directory for saving QR code
-FILL_COLOR = os.getenv('FILL_COLOR', 'red')  # Fill color for the QR code
+FILL_COLOR = os.getenv('FILL_COLOR', 'blue')  # Fill color for the QR code
 BACK_COLOR = os.getenv('BACK_COLOR', 'white')  # Background color for the QR code
 
 def setup_logging():
@@ -59,7 +59,7 @@ def generate_qr_code(data, path, fill_color='red', back_color='white'):
 def main():
     # Set up command-line argument parsing
     parser = argparse.ArgumentParser(description='Generate a QR code.')
-    parser.add_argument('--url', help='The URL to encode in the QR code', default='https://github.com/kaw393939')
+    parser.add_argument('--url', help='The URL to encode in the QR code', default='https://github.com/vybhg')
     args = parser.parse_args()
 
     # Initial logging setup
